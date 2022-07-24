@@ -1,3 +1,4 @@
+from gettext import install
 import os
 import getpass
 
@@ -8,3 +9,5 @@ def install_package():
 	except Exception as e:
 		print(f"Failed to install {package_name}\n{e}")
 
+if __name__=="__main__":
+	install_package()
